@@ -1,7 +1,15 @@
-namespace some.thing.stupid {
+///<reference path="someInterface.ts"/>
+///<reference path="someObject.ts"/>
+
+namespace Some.Thing {
     export class Whatever {
-        public static subtract(a:number, b:number):number {
-            return a - b;
+        public static getSomeInterface():ISomeInterface{
+            let obj: ISomeInterface = { prop: 5};
+            return obj;
+        }
+
+        public static getSomeObject():SomeObject{
+             return new SomeObject();
         }
     }
 }

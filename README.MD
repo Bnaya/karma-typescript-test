@@ -1,10 +1,17 @@
-npm install
+#Karma TypeScript Example
 
-typings install
+This example uses no module bundling mechanism, only internal modules (namespaces) with TS compiler references.
 
--- run karma tests
-npm test
+## Install Dependencies
 
+```npm install```
 
--- compile TypeScript
-tsc --module none --out ./dist/compiledSingleFile.js ./src/moduleA.ts
+```typings install```
+
+## Run Tests
+
+```npm test```
+
+## Build TypeScript
+
+```tsc -p ./```
